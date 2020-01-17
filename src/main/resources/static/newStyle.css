@@ -1,0 +1,139 @@
+.heading {
+    visibility: hidden;
+    color: red;
+}
+
+
+body {
+    color:#c0c0c0;
+    background: #3d3d3d
+}
+.topPortion {
+    font-size: 1.2em;
+}
+#calculator {
+    background:#232323;
+    border:#000 1px solid;
+    border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+    -webkit-box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+    -moz-box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+    background-image:-moz-linear-gradient(top, #333333, #1f1f1f);
+    background-image:-webkit-linear-gradient(top, #333333, #1f1f1f);
+    background-image:linear-gradient(top, #333333, #1f1f1f);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#display {
+    width: 92%;
+    font-size: 5rem;
+    height: 80px;
+    border:#000 1px solid;
+    border-radius:7px;
+    background-color: #252525;
+    color: #4af626;
+    font-family: "Lucida Console";
+    font-weight: lighter;
+    font-variant: small-caps;
+    text-shadow: 0 0 5px #C8C8C8;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+.button_on_grid {
+    height: 60px;
+    background-color:#2f2f2f;
+    border-radius: 3px;
+    border-color: black;
+    font-size: 2rem;
+    color:#c0c0c0;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+    box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+    text-shadow:#000 0px -1px 0px;
+}
+
+.button_on_grid:hover {
+    background-color: #828282;
+}
+
+.equal_button {
+    height: 100%;
+    background-color: #2e86c0;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    font-size: 2rem;
+    color: #fff;
+    grid-area: 4 / 4 / 6 / 5;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+}
+
+#calcheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

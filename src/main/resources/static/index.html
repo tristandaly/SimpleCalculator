@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1 class="heading">90's Calculator</h1>
+    <link id="pagestyle" href="newStyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script src="myscripts.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $( "#calculator" ).draggable();
+    } );
+</script>
+<div id="4head"></div>
+<form id="calculator" name="calculator">
+    <span class="topPortion">TAD</span>
+    <input type="text" id="display" name="display" disabled>
+    <div class="calculator-keys">
+        <input type="button" class="button_on_grid" id="button_add" name="button_add" value="+" onclick="calculator.display.value+='+'">
+        <input type="button" class="button_on_grid" id="button_subtract" name="button_subtract" value="-" onclick="calculator.display.value+='-'">
+        <input type="button" class="button_on_grid" id="button_multiply" name="button_multiply" value="x" onclick="calculator.display.value+='*'">
+        <input type="button" class="button_on_grid" id="button_divide" name="button_divide" value="÷" onclick="calculator.display.value+='/'">
+        <input type="button" class="button_on_grid" id="button_7" name="button_7" value="7" onclick="calculator.display.value+='7'">
+        <input type="button" class="button_on_grid" id="button_8" name="button_8" value="8" onclick="calculator.display.value+='8'">
+        <input type="button" class="button_on_grid" id="button_9" name="button_9" value="9" onclick="calculator.display.value+='9'">
+        <input type="button" class="button_on_grid" id="button_paren_open" name="button_paren_open" value="(" onclick="calculator.display.value+='('">
+        <input type="button" class="button_on_grid" id="button_4" name="button_4" value="4" onclick="calculator.display.value+='4'">
+        <input type="button" class="button_on_grid" id="button_5" name="button_5" value="5" onclick="calculator.display.value+='5'">
+        <input type="button" class="button_on_grid" id="button_6" name="button_6" value="6" onclick="calculator.display.value+='6'">
+        <input type="button" class="button_on_grid" id="button_paren_close" name="button_paren_close" value=")" onclick="calculator.display.value+=')'">
+        <input type="button" class="button_on_grid" id="button_1" name="button_1" value="1" onclick="calculator.display.value+='1'">
+        <input type="button" class="button_on_grid" id="button_2" name="button_2" value="2" onclick="calculator.display.value+='2'">
+        <input type="button" class="button_on_grid" id="button_3" name="button_3" value="3" onclick="calculator.display.value+='3'">
+        <input type="button" class="button_on_grid" id="button_decimal" name="button_decimal" value="." onclick="calculator.display.value+='.'">
+        <input type="button" class="button_on_grid" id="button_0" name="button_0" value="0" onclick="calculator.display.value+='0'">
+        <input type="button" class="button_on_grid" id="button_clear" name="button_clear" value="CE" onclick="calculator.display.value=''">
+        <input type="button" class="equal_button" id="button_equals" name="button_equals" value="=" onclick="calculator.display.value =eval(calculator.display.value)">
+    </div>
+</form>
+<button onclick="swapStyleSheet('style.css')" class="button" style="vertical-align:middle"><span>Time Travel</span></button>
+</body>
+</html>

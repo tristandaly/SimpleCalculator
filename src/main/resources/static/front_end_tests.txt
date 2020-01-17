@@ -1,0 +1,38 @@
+Final Build 1/16/2020
+
+Tests ran:
+
+// Functional Logic //
+
+Value Input
+    Expected Result: Value appears on screen when clicked - PASSED
+
+Value Clear
+    Expected Result: Clear button sets screen value to nothing - PASSED
+
+Evaluate incomplete problems
+    Expected Result: Problem not evaluated - PASSED
+
+// Arithmetic Logic //
+
+Order of Operations (1+3)*8 vs 1+3*8
+    ER: 32 vs 25 - PASSED
+    Expected Result: Problem in parenthesis is evaluated before remainder of problem - PASSED
+
+Add: 25+25
+    Expected Result: 50 - PASSED
+
+Subtract: 25-25
+    Expected Result: 0 - PASSED
+
+Multiply: 25*25
+    Expected Result: 625 - PASSED
+
+Divide: 25/25
+    Expected Result: 1 - PASSED
+
+Divide: 25/90
+    Expected Result: 2.78 - PASSED
+
+Divide: 25/0
+    Expected Result: Not to crash - PASSED
